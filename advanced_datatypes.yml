@@ -1,0 +1,48 @@
+# some of the keys will be empty sparse seq
+
+student: 
+ - marks
+ - 
+ - name
+ 
+#  nested sequence
+
+- 
+ - name
+ - age
+-
+ - gender
+ - profession
+
+
+# key value pairs are called as maps
+!!maps
+# nested mapps 
+name: zainab
+role:
+ age: 19
+
+
+# keys may have duplicate values
+
+# dictionary omaps
+people:
+- zainab: !!omaps
+   name: zainab mirkar
+   age: 19
+   student: CS
+
+
+# reusing properties using anchors
+likings: &likes
+  fav fruit: mango
+  fav game: football
+
+zainab:
+  <<: *likes
+  fav game: hockey          #overide fav game
+iqra:
+  fav fruit: mango
+  fav game: football
+ 
+ 

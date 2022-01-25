@@ -1,0 +1,23 @@
+# case sensitive
+
+
+# key value pairs
+"Zainab":"student"
+# use dash for seperating documents
+----
+# lists
+-apple
+-mango
+----
+cities:
+ - mumbai
+ - new delhi
+----
+# similarly store in a single line
+cities: [mumbai,new delhi]
+----
+# key value pairs
+{name: "zainab", age: 19}
+----
+#  document finished with ....
+....

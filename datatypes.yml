@@ -1,0 +1,34 @@
+# string variables
+name: "zainab"
+surname: mirkar
+subject: 'CS'
+
+# multiple lines using |
+bio: |
+Hi myself zainab
+I am a cs student
+
+# write a single line in multiple lines
+data: >
+this 
+is a 
+single line
+
+# automatically detects the datatype
+number: 23
+marks: 23.89
+bool: !!bool no  #can use N, n, false, False (same for true)
+
+# specify the type
+num: !!int 90
+hex: !!int 0x2333
+binary: !!int 0b01101
+commaNum: !!int +54_000 # 54,000
+
+# floating point numbers
+float: !!float 25.56
+infinite: !!float .inf
+Nan: .nan
+
+# null
+name: null
